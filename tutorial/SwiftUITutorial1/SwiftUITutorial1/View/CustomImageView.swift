@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CustomImageView: View {
+  var image: Image
   var body: some View {
-    Image("sini")
+    image
       .resizable() // frame 이후에 선언하면 오류가 발생
       .scaledToFit()
     //      .frame(width: 200, height: 200, alignment: .center)
@@ -23,6 +24,6 @@ struct CustomImageView: View {
 
 struct CustomImageView_Previews: PreviewProvider {
   static var previews: some View {
-    CustomImageView()
+    CustomImageView(image: Image("turtlerock"))
   }
 }
