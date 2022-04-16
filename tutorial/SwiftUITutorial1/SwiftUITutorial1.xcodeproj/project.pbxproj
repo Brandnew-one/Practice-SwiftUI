@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE9E0080280A9DB100B54E09 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E007F280A9DB100B54E09 /* MapView.swift */; };
 		AEA266632807069800A94329 /* SwiftUITutorial1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA266622807069800A94329 /* SwiftUITutorial1App.swift */; };
 		AEA266652807069800A94329 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA266642807069800A94329 /* ContentView.swift */; };
 		AEA266672807069900A94329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA266662807069900A94329 /* Assets.xcassets */; };
 		AEA2666A2807069900A94329 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA266692807069900A94329 /* Preview Assets.xcassets */; };
+		AEA26671280709E100A94329 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26670280709E100A94329 /* CustomTextView.swift */; };
+		AEAC25DF280A88190066BBC8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC25DE280A88190066BBC8 /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE9E007F280A9DB100B54E09 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AEA2665F2807069800A94329 /* SwiftUITutorial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA266622807069800A94329 /* SwiftUITutorial1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorial1App.swift; sourceTree = "<group>"; };
 		AEA266642807069800A94329 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEA266662807069900A94329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA266692807069900A94329 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEA26670280709E100A94329 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		AEAC25DE280A88190066BBC8 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				AEA266622807069800A94329 /* SwiftUITutorial1App.swift */,
 				AEA266642807069800A94329 /* ContentView.swift */,
+				AEA26670280709E100A94329 /* CustomTextView.swift */,
+				AEAC25DE280A88190066BBC8 /* CustomImageView.swift */,
+				AE9E007F280A9DB100B54E09 /* MapView.swift */,
 				AEA266662807069900A94329 /* Assets.xcassets */,
 				AEA266682807069900A94329 /* Preview Content */,
 			);
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA266652807069800A94329 /* ContentView.swift in Sources */,
+				AEAC25DF280A88190066BBC8 /* CustomImageView.swift in Sources */,
+				AE9E0080280A9DB100B54E09 /* MapView.swift in Sources */,
 				AEA266632807069800A94329 /* SwiftUITutorial1App.swift in Sources */,
+				AEA26671280709E100A94329 /* CustomTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
