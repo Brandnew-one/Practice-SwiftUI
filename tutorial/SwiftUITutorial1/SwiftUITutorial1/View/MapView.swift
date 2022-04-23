@@ -16,6 +16,7 @@ struct MapView: View {
     Map(coordinateRegion: $region)
       .onAppear {
         setRegion(coordinate)
+        print("MapView onAppear")
       }
   }
   

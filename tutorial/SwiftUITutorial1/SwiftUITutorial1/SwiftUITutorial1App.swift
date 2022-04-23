@@ -12,6 +12,7 @@ struct SwiftUITutorial1App: App {
   var body: some Scene {
     WindowGroup {
       LandmarkList()
+//      ContentView()
     }
   }
 }

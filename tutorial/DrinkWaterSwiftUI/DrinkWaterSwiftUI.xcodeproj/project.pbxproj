@@ -7,40 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE746E0D280AB088001C7AE7 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE746E0C280AB088001C7AE7 /* LandmarkList.swift */; };
-		AE746E0F280AB355001C7AE7 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE746E0E280AB355001C7AE7 /* LandmarkDetail.swift */; };
-		AE8F32F4280B10B3007237C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F32F3280B10B3007237C6 /* ContentView.swift */; };
-		AE9E0080280A9DB100B54E09 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E007F280A9DB100B54E09 /* MapView.swift */; };
-		AEA266632807069800A94329 /* SwiftUITutorial1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA266622807069800A94329 /* SwiftUITutorial1App.swift */; };
-		AEA266672807069900A94329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA266662807069900A94329 /* Assets.xcassets */; };
-		AEA2666A2807069900A94329 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA266692807069900A94329 /* Preview Assets.xcassets */; };
-		AEA26671280709E100A94329 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA26670280709E100A94329 /* CustomTextView.swift */; };
-		AEAC25DF280A88190066BBC8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAC25DE280A88190066BBC8 /* CustomImageView.swift */; };
-		AEE98FA2280AA4320083E52E /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = AEE98FA1280AA4320083E52E /* landmarkData.json */; };
-		AEE98FA4280AA4610083E52E /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE98FA3280AA4610083E52E /* Landmark.swift */; };
-		AEE98FA6280AA7190083E52E /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE98FA5280AA7190083E52E /* ModelData.swift */; };
-		AEE98FAA280AA8760083E52E /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE98FA9280AA8760083E52E /* LandmarkRow.swift */; };
+		AEBB7E232813CC640002BA16 /* DrinkWaterSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E222813CC640002BA16 /* DrinkWaterSwiftUIApp.swift */; };
+		AEBB7E252813CC640002BA16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E242813CC640002BA16 /* ContentView.swift */; };
+		AEBB7E272813CC660002BA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBB7E262813CC660002BA16 /* Assets.xcassets */; };
+		AEBB7E2A2813CC660002BA16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBB7E292813CC660002BA16 /* Preview Assets.xcassets */; };
+		AEBB7E332813CD180002BA16 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E322813CD180002BA16 /* MainView.swift */; };
+		AEBB7E362813D5C40002BA16 /* GoalTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E352813D5C40002BA16 /* GoalTextView.swift */; };
+		AEBB7E382813D6430002BA16 /* CenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E372813D6430002BA16 /* CenterView.swift */; };
+		AEBB7E3B2813EAFA0002BA16 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E3A2813EAFA0002BA16 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE746E0C280AB088001C7AE7 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
-		AE746E0E280AB355001C7AE7 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
-		AE8F32F3280B10B3007237C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AE9E007F280A9DB100B54E09 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		AEA2665F2807069800A94329 /* SwiftUITutorial1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEA266622807069800A94329 /* SwiftUITutorial1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorial1App.swift; sourceTree = "<group>"; };
-		AEA266662807069900A94329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AEA266692807069900A94329 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AEA26670280709E100A94329 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
-		AEAC25DE280A88190066BBC8 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
-		AEE98FA1280AA4320083E52E /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
-		AEE98FA3280AA4610083E52E /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
-		AEE98FA5280AA7190083E52E /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		AEE98FA9280AA8760083E52E /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		AEBB7E1F2813CC640002BA16 /* DrinkWaterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWaterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBB7E222813CC640002BA16 /* DrinkWaterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterSwiftUIApp.swift; sourceTree = "<group>"; };
+		AEBB7E242813CC640002BA16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEBB7E262813CC660002BA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEBB7E292813CC660002BA16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEBB7E322813CD180002BA16 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AEBB7E352813D5C40002BA16 /* GoalTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTextView.swift; sourceTree = "<group>"; };
+		AEBB7E372813D6430002BA16 /* CenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterView.swift; sourceTree = "<group>"; };
+		AEBB7E3A2813EAFA0002BA16 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AEA2665C2807069700A94329 /* Frameworks */ = {
+		AEBB7E1C2813CC640002BA16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,102 +40,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AEA266562807069700A94329 = {
+		AEBB7E162813CC640002BA16 = {
 			isa = PBXGroup;
 			children = (
-				AEA266612807069800A94329 /* SwiftUITutorial1 */,
-				AEA266602807069800A94329 /* Products */,
+				AEBB7E212813CC640002BA16 /* DrinkWaterSwiftUI */,
+				AEBB7E202813CC640002BA16 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AEA266602807069800A94329 /* Products */ = {
+		AEBB7E202813CC640002BA16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEA2665F2807069800A94329 /* SwiftUITutorial1.app */,
+				AEBB7E1F2813CC640002BA16 /* DrinkWaterSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AEA266612807069800A94329 /* SwiftUITutorial1 */ = {
+		AEBB7E212813CC640002BA16 /* DrinkWaterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				AEA266622807069800A94329 /* SwiftUITutorial1App.swift */,
-				AEE98FA8280AA7610083E52E /* View */,
-				AEE98FA7280AA74E0083E52E /* Model */,
-				AEE98FA1280AA4320083E52E /* landmarkData.json */,
-				AEA266662807069900A94329 /* Assets.xcassets */,
-				AEA266682807069900A94329 /* Preview Content */,
+				AEBB7E222813CC640002BA16 /* DrinkWaterSwiftUIApp.swift */,
+				AEBB7E242813CC640002BA16 /* ContentView.swift */,
+				AEBB7E392813E0EB0002BA16 /* ViewModel */,
+				AEBB7E342813D58A0002BA16 /* View */,
+				AEBB7E262813CC660002BA16 /* Assets.xcassets */,
+				AEBB7E282813CC660002BA16 /* Preview Content */,
 			);
-			path = SwiftUITutorial1;
+			path = DrinkWaterSwiftUI;
 			sourceTree = "<group>";
 		};
-		AEA266682807069900A94329 /* Preview Content */ = {
+		AEBB7E282813CC660002BA16 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				AEA266692807069900A94329 /* Preview Assets.xcassets */,
+				AEBB7E292813CC660002BA16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AEE98FA7280AA74E0083E52E /* Model */ = {
+		AEBB7E342813D58A0002BA16 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AEE98FA5280AA7190083E52E /* ModelData.swift */,
-				AEE98FA3280AA4610083E52E /* Landmark.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		AEE98FA8280AA7610083E52E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AE8F32F3280B10B3007237C6 /* ContentView.swift */,
-				AEA26670280709E100A94329 /* CustomTextView.swift */,
-				AEAC25DE280A88190066BBC8 /* CustomImageView.swift */,
-				AE9E007F280A9DB100B54E09 /* MapView.swift */,
-				AEE98FA9280AA8760083E52E /* LandmarkRow.swift */,
-				AE746E0C280AB088001C7AE7 /* LandmarkList.swift */,
-				AE746E0E280AB355001C7AE7 /* LandmarkDetail.swift */,
+				AEBB7E322813CD180002BA16 /* MainView.swift */,
+				AEBB7E3A2813EAFA0002BA16 /* SettingView.swift */,
+				AEBB7E352813D5C40002BA16 /* GoalTextView.swift */,
+				AEBB7E372813D6430002BA16 /* CenterView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AEBB7E392813E0EB0002BA16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AEA2665E2807069700A94329 /* SwiftUITutorial1 */ = {
+		AEBB7E1E2813CC640002BA16 /* DrinkWaterSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEA2666D2807069900A94329 /* Build configuration list for PBXNativeTarget "SwiftUITutorial1" */;
+			buildConfigurationList = AEBB7E2D2813CC660002BA16 /* Build configuration list for PBXNativeTarget "DrinkWaterSwiftUI" */;
 			buildPhases = (
-				AEA2665B2807069700A94329 /* Sources */,
-				AEA2665C2807069700A94329 /* Frameworks */,
-				AEA2665D2807069700A94329 /* Resources */,
+				AEBB7E1B2813CC640002BA16 /* Sources */,
+				AEBB7E1C2813CC640002BA16 /* Frameworks */,
+				AEBB7E1D2813CC640002BA16 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftUITutorial1;
-			productName = SwiftUITutorial1;
-			productReference = AEA2665F2807069800A94329 /* SwiftUITutorial1.app */;
+			name = DrinkWaterSwiftUI;
+			productName = DrinkWaterSwiftUI;
+			productReference = AEBB7E1F2813CC640002BA16 /* DrinkWaterSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AEA266572807069700A94329 /* Project object */ = {
+		AEBB7E172813CC640002BA16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					AEA2665E2807069700A94329 = {
+					AEBB7E1E2813CC640002BA16 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = AEA2665A2807069700A94329 /* Build configuration list for PBXProject "SwiftUITutorial1" */;
+			buildConfigurationList = AEBB7E1A2813CC640002BA16 /* Build configuration list for PBXProject "DrinkWaterSwiftUI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,51 +138,46 @@
 				en,
 				Base,
 			);
-			mainGroup = AEA266562807069700A94329;
-			productRefGroup = AEA266602807069800A94329 /* Products */;
+			mainGroup = AEBB7E162813CC640002BA16;
+			productRefGroup = AEBB7E202813CC640002BA16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AEA2665E2807069700A94329 /* SwiftUITutorial1 */,
+				AEBB7E1E2813CC640002BA16 /* DrinkWaterSwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AEA2665D2807069700A94329 /* Resources */ = {
+		AEBB7E1D2813CC640002BA16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEA2666A2807069900A94329 /* Preview Assets.xcassets in Resources */,
-				AEA266672807069900A94329 /* Assets.xcassets in Resources */,
-				AEE98FA2280AA4320083E52E /* landmarkData.json in Resources */,
+				AEBB7E2A2813CC660002BA16 /* Preview Assets.xcassets in Resources */,
+				AEBB7E272813CC660002BA16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AEA2665B2807069700A94329 /* Sources */ = {
+		AEBB7E1B2813CC640002BA16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEAC25DF280A88190066BBC8 /* CustomImageView.swift in Sources */,
-				AE9E0080280A9DB100B54E09 /* MapView.swift in Sources */,
-				AEE98FA4280AA4610083E52E /* Landmark.swift in Sources */,
-				AE746E0D280AB088001C7AE7 /* LandmarkList.swift in Sources */,
-				AE746E0F280AB355001C7AE7 /* LandmarkDetail.swift in Sources */,
-				AEA266632807069800A94329 /* SwiftUITutorial1App.swift in Sources */,
-				AE8F32F4280B10B3007237C6 /* ContentView.swift in Sources */,
-				AEA26671280709E100A94329 /* CustomTextView.swift in Sources */,
-				AEE98FAA280AA8760083E52E /* LandmarkRow.swift in Sources */,
-				AEE98FA6280AA7190083E52E /* ModelData.swift in Sources */,
+				AEBB7E362813D5C40002BA16 /* GoalTextView.swift in Sources */,
+				AEBB7E382813D6430002BA16 /* CenterView.swift in Sources */,
+				AEBB7E252813CC640002BA16 /* ContentView.swift in Sources */,
+				AEBB7E3B2813EAFA0002BA16 /* SettingView.swift in Sources */,
+				AEBB7E332813CD180002BA16 /* MainView.swift in Sources */,
+				AEBB7E232813CC640002BA16 /* DrinkWaterSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AEA2666B2807069900A94329 /* Debug */ = {
+		AEBB7E2B2813CC660002BA16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		AEA2666C2807069900A94329 /* Release */ = {
+		AEBB7E2C2813CC660002BA16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -313,14 +293,14 @@
 			};
 			name = Release;
 		};
-		AEA2666E2807069900A94329 /* Debug */ = {
+		AEBB7E2E2813CC660002BA16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITutorial1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DrinkWaterSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = W4HDX5XCG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -329,13 +309,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangwonshin.SwiftUITutorial1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwonshin.DrinkWaterSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -343,14 +323,14 @@
 			};
 			name = Debug;
 		};
-		AEA2666F2807069900A94329 /* Release */ = {
+		AEBB7E2F2813CC660002BA16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITutorial1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DrinkWaterSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = W4HDX5XCG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -359,13 +339,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangwonshin.SwiftUITutorial1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwonshin.DrinkWaterSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -376,25 +356,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AEA2665A2807069700A94329 /* Build configuration list for PBXProject "SwiftUITutorial1" */ = {
+		AEBB7E1A2813CC640002BA16 /* Build configuration list for PBXProject "DrinkWaterSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEA2666B2807069900A94329 /* Debug */,
-				AEA2666C2807069900A94329 /* Release */,
+				AEBB7E2B2813CC660002BA16 /* Debug */,
+				AEBB7E2C2813CC660002BA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEA2666D2807069900A94329 /* Build configuration list for PBXNativeTarget "SwiftUITutorial1" */ = {
+		AEBB7E2D2813CC660002BA16 /* Build configuration list for PBXNativeTarget "DrinkWaterSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AEA2666E2807069900A94329 /* Debug */,
-				AEA2666F2807069900A94329 /* Release */,
+				AEBB7E2E2813CC660002BA16 /* Debug */,
+				AEBB7E2F2813CC660002BA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AEA266572807069700A94329 /* Project object */;
+	rootObject = AEBB7E172813CC640002BA16 /* Project object */;
 }
