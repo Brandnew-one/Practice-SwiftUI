@@ -28,6 +28,7 @@ struct GoalTextView: View {
       Text("목표의 \(goalPercent)%")
         .font(.subheadline)
     }
+//    .background(Color(UIColor.systemGreen))
   }
 }
 

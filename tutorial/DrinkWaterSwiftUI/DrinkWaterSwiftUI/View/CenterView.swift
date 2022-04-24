@@ -8,15 +8,26 @@
 import SwiftUI
 
 // MARK: Center 이미지 및 버튼까지
+// https://stackoverflow.com/questions/56491386/how-to-hide-keyboard-when-using-swiftui
 struct CenterView: View {
-  @State var unitWater: String = "1000"
+  
+  @State
+  private var unitWater: String = "100"
+  
   var totalWater = 0
   let deviceWidth = UIScreen.main.bounds.width
+  
+  @ObservedObject
+  var viewModel: MainViewModel
+  
+  init(viewModel: MainViewModel) {
+    self.viewModel = viewModel
+  }
   
   var body: some View {
     VStack(spacing: 18) {
       Spacer()
-      Image("1-1")
+      viewModel.setImage()
         .resizable()
         .frame(width: deviceWidth * 0.65, height: deviceWidth * 0.65)
         .clipShape(Circle())
@@ -32,21 +43,22 @@ struct CenterView: View {
       }
       
       Button(
-        action: { print("Hello") },
+        action: { viewModel.drinkButtonClicked(unitWater: Int(unitWater) ?? 0) },
         label: {
           Text("물마시기")
             .font(.body)
         }
       )
       Spacer()
-      Text("님의 하루 물 권장 섭취량은 L입니다.")
+      Text("\(viewModel.name ?? "닉네임")님의 하루 물 권장 섭취량은 \(viewModel.calGoalWater())ml입니다.")
         .font(.footnote)
     }
+//    .background(Color(UIColor.systemGreen))
   }
 }
 
-struct CenterView_Previews: PreviewProvider {
-  static var previews: some View {
-    CenterView()
-  }
-}
+//struct CenterView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    CenterView(name: "홍길동")
+//  }
+//}
