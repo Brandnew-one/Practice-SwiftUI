@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-// TODO: ViewModel이 있는데 nick, height, weight를 따로 선언할 필요가 있을까?
+// TODO: Alert(iOS 15에서 부터 업데이트 내역 확인하기) https://seorenn.tistory.com/206
 struct SettingView: View {
   
   let deviceWidth = UIScreen.main.bounds.width
+
+  @ObservedObject
   var viewModel: MainViewModel
   
   @State
@@ -46,6 +48,13 @@ struct SettingView: View {
                     .foregroundColor(.white)
                 }
               )
+                .alert(isPresented: $viewModel.isUncorrect) {
+                  Alert(
+                    title: Text("올바르지 않은 입력값입니다."),
+                    message: Text("이름, 키, 몸무게를 똑바로 입력해잇!"),
+                    dismissButton: .default(Text("넹.."))
+                  )
+                }
             }
           }
       }
@@ -68,11 +77,6 @@ struct SettingView: View {
       Spacer(minLength: 30)
     }
     .foregroundColor(.white)
+    .onAppear(perform: UIApplication.shared.hideKeyboard)
   }
 }
-
-//struct SettingView_Previews: PreviewProvider {
-//  static var previews: some View {
-//    SettingView()
-//  }
-//}

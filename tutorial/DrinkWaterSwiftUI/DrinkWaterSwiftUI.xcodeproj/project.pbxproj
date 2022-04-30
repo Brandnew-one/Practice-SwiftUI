@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5553A2281D0E980092F7C2 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5553A1281D0E980092F7C2 /* HideKeyboard.swift */; };
 		AEB099E92814F94600136D64 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB099E82814F94600136D64 /* MainViewModel.swift */; };
 		AEBA3CA528141018008705C3 /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBA3CA428141018008705C3 /* UserDefaultKey.swift */; };
 		AEBB7E232813CC640002BA16 /* DrinkWaterSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E222813CC640002BA16 /* DrinkWaterSwiftUIApp.swift */; };
-		AEBB7E252813CC640002BA16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E242813CC640002BA16 /* ContentView.swift */; };
 		AEBB7E272813CC660002BA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBB7E262813CC660002BA16 /* Assets.xcassets */; };
 		AEBB7E2A2813CC660002BA16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBB7E292813CC660002BA16 /* Preview Assets.xcassets */; };
 		AEBB7E332813CD180002BA16 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB7E322813CD180002BA16 /* MainView.swift */; };
@@ -20,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE5553A1281D0E980092F7C2 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 		AEB099E82814F94600136D64 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		AEBA3CA428141018008705C3 /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		AEBB7E1F2813CC640002BA16 /* DrinkWaterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkWaterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBB7E222813CC640002BA16 /* DrinkWaterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkWaterSwiftUIApp.swift; sourceTree = "<group>"; };
-		AEBB7E242813CC640002BA16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AEBB7E262813CC660002BA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEBB7E292813CC660002BA16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEBB7E322813CD180002BA16 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			children = (
 				AEBB7E222813CC640002BA16 /* DrinkWaterSwiftUIApp.swift */,
 				AEBA3CA428141018008705C3 /* UserDefaultKey.swift */,
-				AEBB7E242813CC640002BA16 /* ContentView.swift */,
+				AE5553A1281D0E980092F7C2 /* HideKeyboard.swift */,
 				AEB099E72814EB7800136D64 /* ViewModel */,
 				AEBB7E342813D58A0002BA16 /* View */,
 				AEBB7E262813CC660002BA16 /* Assets.xcassets */,
@@ -174,10 +174,10 @@
 				AEBB7E362813D5C40002BA16 /* GoalTextView.swift in Sources */,
 				AEBA3CA528141018008705C3 /* UserDefaultKey.swift in Sources */,
 				AEBB7E382813D6430002BA16 /* CenterView.swift in Sources */,
-				AEBB7E252813CC640002BA16 /* ContentView.swift in Sources */,
 				AEBB7E3B2813EAFA0002BA16 /* SettingView.swift in Sources */,
 				AEBB7E332813CD180002BA16 /* MainView.swift in Sources */,
 				AEBB7E232813CC640002BA16 /* DrinkWaterSwiftUIApp.swift in Sources */,
+				AE5553A2281D0E980092F7C2 /* HideKeyboard.swift in Sources */,
 				AEB099E92814F94600136D64 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

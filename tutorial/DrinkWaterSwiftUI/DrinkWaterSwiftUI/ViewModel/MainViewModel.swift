@@ -12,12 +12,18 @@ class MainViewModel: ObservableObject {
   
   @Published
   var name: String? = UserDefaults.standard.string(forKey: UserDefaultKey.name)
+
   @Published
   var height: Double? = UserDefaults.standard.double(forKey: UserDefaultKey.height)
+
   @Published
   var weight: Double? = UserDefaults.standard.double(forKey: UserDefaultKey.weight)
+
   @Published
   var water: Int = UserDefaults.standard.integer(forKey: UserDefaultKey.water)
+
+  @Published
+  var isUncorrect: Bool = false
   
   func resetWater() {
     water = 0
@@ -85,6 +91,7 @@ class MainViewModel: ObservableObject {
           let weight = Double(weight)
     else {
       print("잘못된 형식입니다.") // 얼럿으로 적용
+      isUncorrect = true
       return
     }
     print(name, height, weight)
@@ -95,20 +102,7 @@ class MainViewModel: ObservableObject {
     UserDefaults.standard.set(height, forKey: UserDefaultKey.height)
     self.weight = weight
     UserDefaults.standard.set(weight, forKey: UserDefaultKey.weight)
-    
-    print(
-      "UserDefault Values",
-      UserDefaults.standard.string(forKey: UserDefaultKey.name),
-      UserDefaults.standard.double(forKey: UserDefaultKey.height),
-      UserDefaults.standard.double(forKey: UserDefaultKey.weight)
-    )
-    
-    print(
-      "ViewModel Values",
-      self.name,
-      self.height,
-      self.weight
-    )
+    isUncorrect = false
   }
   
 }

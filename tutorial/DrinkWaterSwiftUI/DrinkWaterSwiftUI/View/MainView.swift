@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-// TODO: 탭제스쳐를 넣으면 네비게이션 아이템이 동작하지 않는 문제
-// TODO: 다크모드 대응(https://seons-dev.tistory.com/176)
-//    .foregroundColor(Color(uiColor: .systemGreen)) // iOS 15
 struct MainView: View {
   
   @StateObject
   var viewModel = MainViewModel()
+
+  @Environment(\.colorScheme)
+  var colorScheme
   
   init() {
     let coloredAppearance = UINavigationBarAppearance()
@@ -23,13 +23,13 @@ struct MainView: View {
     UINavigationBar.appearance().standardAppearance = coloredAppearance
     UINavigationBar.appearance().compactAppearance = coloredAppearance
     UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
-    UINavigationBar.appearance().tintColor = .white
+    UINavigationBar.appearance().tintColor = colorScheme == .light ? .white : .white
   }
   
   var body: some View {
     NavigationView {
       ZStack {
-        Color(UIColor.systemGreen)
+        Color(colorScheme == .light ? UIColor.systemGreen : UIColor.systemGreen)
           .ignoresSafeArea()
         VStack {
           HStack {
@@ -39,8 +39,10 @@ struct MainView: View {
           }
           CenterView(viewModel: viewModel)
         }
-        .foregroundColor(Color.white)
-        .background(Color(UIColor.systemGreen))
+        .foregroundColor(colorScheme == .light ? Color.white : Color.white)
+        .background(
+          colorScheme == .light ? Color(UIColor.systemGreen) : Color(UIColor.systemGreen)
+        )
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("물마시기")
         .toolbar {
@@ -49,14 +51,16 @@ struct MainView: View {
               action: { viewModel.resetWater() },
               label: { Label("Refresh", systemImage: "arrow.clockwise") }
             )
+              .foregroundColor(.white)
           }
           ToolbarItem(placement: .navigationBarTrailing) {
             NavigationLink(
               destination: { SettingView(viewModel: viewModel) },
               label: { Label("Refresh", systemImage: "person") }
             )
+              .foregroundColor(.white)
           }
-      }
+        }
       }
     }
   }
