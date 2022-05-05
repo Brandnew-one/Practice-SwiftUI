@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		65CC67AB2823D3590042137A /* LotteryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC67AA2823D3590042137A /* LotteryAppApp.swift */; };
-		65CC67AD2823D3590042137A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC67AC2823D3590042137A /* ContentView.swift */; };
 		65CC67AF2823D35B0042137A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CC67AE2823D35B0042137A /* Assets.xcassets */; };
 		65CC67B22823D35B0042137A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65CC67B12823D35B0042137A /* Preview Assets.xcassets */; };
 		65CC67BB2823D5FD0042137A /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC67BA2823D5FD0042137A /* NumbersView.swift */; };
@@ -17,12 +16,12 @@
 		65CC67C42823E5AD0042137A /* LotteryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC67C32823E5AD0042137A /* LotteryViewModel.swift */; };
 		65CC67C82823EC970042137A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC67C72823EC970042137A /* MainView.swift */; };
 		65CC67CA2823F2A60042137A /* drwNoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC67C92823F2A60042137A /* drwNoView.swift */; };
+		65CC67CC282404AF0042137A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC67CB282404AF0042137A /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65CC67A72823D3590042137A /* LotteryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotteryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CC67AA2823D3590042137A /* LotteryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryAppApp.swift; sourceTree = "<group>"; };
-		65CC67AC2823D3590042137A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65CC67AE2823D35B0042137A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65CC67B12823D35B0042137A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65CC67BA2823D5FD0042137A /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 		65CC67C32823E5AD0042137A /* LotteryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewModel.swift; sourceTree = "<group>"; };
 		65CC67C72823EC970042137A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		65CC67C92823F2A60042137A /* drwNoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drwNoView.swift; sourceTree = "<group>"; };
+		65CC67CB282404AF0042137A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				65CC67AA2823D3590042137A /* LotteryAppApp.swift */,
-				65CC67AC2823D3590042137A /* ContentView.swift */,
 				65CC67BD2823D93C0042137A /* ColorExtension.swift */,
 				65CC67BF2823E4840042137A /* Model */,
 				65CC67BC2823D9240042137A /* View */,
@@ -97,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				65CC67C02823E4940042137A /* Lottery.swift */,
+				65CC67CB282404AF0042137A /* APIService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,11 +181,11 @@
 			files = (
 				65CC67BB2823D5FD0042137A /* NumbersView.swift in Sources */,
 				65CC67C82823EC970042137A /* MainView.swift in Sources */,
-				65CC67AD2823D3590042137A /* ContentView.swift in Sources */,
 				65CC67AB2823D3590042137A /* LotteryAppApp.swift in Sources */,
 				65CC67C12823E4940042137A /* Lottery.swift in Sources */,
 				65CC67C42823E5AD0042137A /* LotteryViewModel.swift in Sources */,
 				65CC67BE2823D93C0042137A /* ColorExtension.swift in Sources */,
+				65CC67CC282404AF0042137A /* APIService.swift in Sources */,
 				65CC67CA2823F2A60042137A /* drwNoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

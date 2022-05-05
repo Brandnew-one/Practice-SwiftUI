@@ -12,7 +12,6 @@ struct NumbersView: View {
   @ObservedObject
   var viewModel: LotteryViewModel
 
-  // TODO: Random한 색상으로 바꾸기
   @ViewBuilder
   func numberLabel(number: String) -> some View {
     ZStack {

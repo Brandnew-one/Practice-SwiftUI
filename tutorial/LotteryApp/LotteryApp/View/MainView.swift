@@ -38,7 +38,7 @@ struct MainView: View {
   @ViewBuilder
   func lotteryNoLabel(drwNo: String) -> some View {
     HStack {
-      Text(drwNo)
+      Text("\(drwNo)회")
         .font(
           .system(
             size: 25,

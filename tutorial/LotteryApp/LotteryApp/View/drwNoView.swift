@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// FIXME: 텍스트필드 값 바뀔 때 마다 색깔 바뀌는게 너무 정신 사나움
+// FIXME: 그냥 버튼 누를때만 바뀌도록 수정
 struct drwNoView: View {
 
   @ObservedObject
@@ -34,7 +36,7 @@ struct drwNoView: View {
 
       Button(
         action: {
-          print("ViewModel Function Call")
+          viewModel.fetchLotteryInfo()
         }) {
           VStack {
             Image(systemName: "heart.fill")
