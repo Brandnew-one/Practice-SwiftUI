@@ -22,3 +22,9 @@
 iOS 15 이상부터는 keyboard에 toolbaritem을 추가할 수 있다. (IQKeyboard와 비슷하게 사용할 수 있다)
 iOS 14 부터느 커스텀한 탭제스쳐를 만들어서 사용해야 한다. (드래그를 통해 내리는것도 가능하다)
 ```
+
+***
+
+## LotteryAPP
+
+![Simulator Screen Recording - iPhone 13 - 2022-05-05 at 23 09 10](https://user-images.githubusercontent.com/88618825/166941894-cddb1e37-9ea0-44c9-866c-5b199baba66b.gif)
