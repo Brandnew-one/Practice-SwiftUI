@@ -5,9 +5,9 @@
 
 ## Drink Water
 
-| 메인화면 | 설정화면 |
-| :-: | :-: |
-| <img src =  https://user-images.githubusercontent.com/88618825/164960317-7b918b6f-1c33-4983-ba5b-05cbceb4cc0a.png size = "50%"> | <img src = https://user-images.githubusercontent.com/88618825/164960332-3a7e2bc9-dd3a-4aaf-b31f-8ae2d49b447d.png size = "50%"> |
+| Dark & Light |
+| :-: |
+| ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 23 00 21](https://user-images.githubusercontent.com/88618825/167299845-f90e6048-0c32-4aa2-83fb-130e83484b4f.gif) |
 
 ### 새로 알게된것들
 
@@ -27,7 +27,14 @@ iOS 14 부터느 커스텀한 탭제스쳐를 만들어서 사용해야 한다. 
 
 ## LotteryAPP
 
-| 1 | 2 |
+| Dark | Light |
 | :-: | :-: |
 | ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 18 26 24](https://user-images.githubusercontent.com/88618825/167290038-4881c04f-0e80-42b5-a060-5955aacc02ab.gif) | ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 15 07 41](https://user-images.githubusercontent.com/88618825/167284158-444b80f6-76a0-4649-ae28-37fa0c3b4766.gif) |
 
+***
+
+## PopupView
+
+| Main |
+| :-: |
+| ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 23 00 46](https://user-images.githubusercontent.com/88618825/167299937-8afd43af-483a-49b5-962c-68c4d623576d.gif) |
