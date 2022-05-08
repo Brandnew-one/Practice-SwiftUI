@@ -29,5 +29,5 @@ iOS 14 부터느 커스텀한 탭제스쳐를 만들어서 사용해야 한다. 
 
 | 1 | 2 |
 | :-: | :-: |
-| ![Simulator Screen Recording - iPhone 13 - 2022-05-05 at 23 09 10](https://user-images.githubusercontent.com/88618825/166941894-cddb1e37-9ea0-44c9-866c-5b199baba66b.gif) | ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 15 07 41](https://user-images.githubusercontent.com/88618825/167284158-444b80f6-76a0-4649-ae28-37fa0c3b4766.gif) |
+| ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 18 26 24](https://user-images.githubusercontent.com/88618825/167290038-4881c04f-0e80-42b5-a060-5955aacc02ab.gif) | ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 15 07 41](https://user-images.githubusercontent.com/88618825/167284158-444b80f6-76a0-4649-ae28-37fa0c3b4766.gif) |
 
