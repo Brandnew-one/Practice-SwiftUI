@@ -12,10 +12,7 @@ import Foundation
 class APIService {
   let baseURL = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo="
 
-//  lazy var url: URL = {
-//    URL(string: baseURL + drwNo)!
-//  } ()
-
+  // TODO: Reulst 타입 사용하기, async-await 적용시켜보기!
   func requestLottery(drwNo: String, completion: @escaping (Lottery) -> Void) {
     let url = URL(string: baseURL + drwNo)!
     URLSession.shared.dataTask(with: url) { data, response, error in

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// TODO: Int로 변경 불가능한 타입이 왔을 경우 대응
 struct drwNoView: View {
   @ObservedObject
   var viewModel: LotteryViewModel
@@ -30,6 +31,10 @@ struct drwNoView: View {
         Theme.myTextColor(scheme: scheme),
         lineWidth: 1
       )
+    )
+    .keyboardType(.numberPad)
+    .onAppear(
+      perform: UIApplication.shared.hideKeyboard
     )
   }
 

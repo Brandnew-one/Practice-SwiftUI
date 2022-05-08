@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-// TODO: DataPicker 추가
 struct MainView: View {
-
   @State
   private var drwNo = ""
 
