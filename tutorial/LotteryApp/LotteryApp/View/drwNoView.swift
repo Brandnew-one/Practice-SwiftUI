@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-// FIXME: 텍스트필드 값 바뀔 때 마다 색깔 바뀌는게 너무 정신 사나움
-// FIXME: 그냥 버튼 누를때만 바뀌도록 수정
 struct drwNoView: View {
-
   @ObservedObject
   var viewModel: LotteryViewModel
+
+  @Binding
+  var drwNo: String
 
   @ViewBuilder
   func textFieldLabel(str: Binding<String>) -> some View {
@@ -32,11 +32,11 @@ struct drwNoView: View {
 
   var body: some View {
     HStack(spacing: 8) {
-      textFieldLabel(str: $viewModel.drwNo)
+      textFieldLabel(str: $drwNo)
 
       Button(
         action: {
-          viewModel.fetchLotteryInfo()
+          viewModel.fetchLotteryInfo(pickedNo: drwNo)
         }) {
           VStack {
             Image(systemName: "heart.fill")
@@ -50,7 +50,11 @@ struct drwNoView: View {
 }
 
 struct drwNoView_Previews: PreviewProvider {
+
   static var previews: some View {
-    drwNoView(viewModel: LotteryViewModel())
+    drwNoView(
+      viewModel: LotteryViewModel(),
+      drwNo: .constant("") // 고정값으로 확인가능
+    )
   }
 }

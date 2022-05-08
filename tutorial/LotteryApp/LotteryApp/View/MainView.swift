@@ -10,6 +10,9 @@ import SwiftUI
 // TODO: DataPicker 추가
 struct MainView: View {
 
+  @State
+  private var drwNo = ""
+
   @StateObject
   var viewModel = LotteryViewModel()
 
@@ -58,7 +61,10 @@ struct MainView: View {
 
   var body: some View {
     VStack(spacing: 0) {
-      drwNoView(viewModel: viewModel)
+      drwNoView(
+        viewModel: viewModel,
+        drwNo: $drwNo
+      )
         .padding(.leading, 8)
 
       lotteryInfoLabel(date: viewModel.lotteryInfo.drwNoDate)
@@ -69,6 +75,11 @@ struct MainView: View {
       NumbersView(viewModel: viewModel)
 
       Spacer()
+
+      PickerView(
+        viewModel: viewModel,
+        pickedValue: $drwNo
+      )
     }
   }
 }
