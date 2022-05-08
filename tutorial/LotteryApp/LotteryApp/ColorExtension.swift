@@ -18,3 +18,20 @@ extension Color {
     )
   }
 }
+
+struct Theme {
+
+  static func myTextColor(scheme: ColorScheme) -> Color {
+    let lightColor = Color.black
+    let darkColor = Color.white
+
+    switch scheme {
+    case .light:
+      return lightColor
+    case .dark:
+      return darkColor
+    @unknown default:
+      return lightColor
+    }
+  }
+}

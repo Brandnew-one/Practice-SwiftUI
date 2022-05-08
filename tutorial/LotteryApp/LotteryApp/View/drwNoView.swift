@@ -14,6 +14,9 @@ struct drwNoView: View {
   @Binding
   var drwNo: String
 
+  @Environment(\.colorScheme)
+  var scheme
+
   @ViewBuilder
   func textFieldLabel(str: Binding<String>) -> some View {
     TextField(
@@ -24,7 +27,7 @@ struct drwNoView: View {
     .background(
       RoundedRectangle(cornerRadius: 10)
       .stroke(
-        Color.black,
+        Theme.myTextColor(scheme: scheme),
         lineWidth: 1
       )
     )
@@ -42,7 +45,7 @@ struct drwNoView: View {
             Image(systemName: "heart.fill")
             Text("확인")
           }
-          .foregroundColor(.black)
+          .foregroundColor(Theme.myTextColor(scheme: scheme))
           .padding()
         }
     }
