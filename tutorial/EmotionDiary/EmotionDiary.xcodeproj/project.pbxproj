@@ -13,6 +13,7 @@
 		651BF9A1282A978B00F569D1 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF9A0282A978B00F569D1 /* BounceButton.swift */; };
 		651BF9A3282A9F7400F569D1 /* EmotionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF9A2282A9F7400F569D1 /* EmotionRowView.swift */; };
 		651BF9A5282AA21C00F569D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF9A4282AA21C00F569D1 /* MainView.swift */; };
+		6565D631282AA9DD00F17782 /* EmotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565D630282AA9DD00F17782 /* EmotionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		651BF9A0282A978B00F569D1 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		651BF9A2282A9F7400F569D1 /* EmotionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionRowView.swift; sourceTree = "<group>"; };
 		651BF9A4282AA21C00F569D1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6565D630282AA9DD00F17782 /* EmotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				651BF991282A847900F569D1 /* EmotionDiaryApp.swift */,
+				6565D62F282AA9BE00F17782 /* ViewModel */,
 				651BF99F282A96E200F569D1 /* View */,
 				651BF995282A847900F569D1 /* Assets.xcassets */,
 				651BF997282A847900F569D1 /* Preview Content */,
@@ -79,6 +82,14 @@
 				651BF9A4282AA21C00F569D1 /* MainView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6565D62F282AA9BE00F17782 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6565D630282AA9DD00F17782 /* EmotionViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6565D631282AA9DD00F17782 /* EmotionViewModel.swift in Sources */,
 				651BF9A1282A978B00F569D1 /* BounceButton.swift in Sources */,
 				651BF9A5282AA21C00F569D1 /* MainView.swift in Sources */,
 				651BF9A3282A9F7400F569D1 /* EmotionRowView.swift in Sources */,
