@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		651BF992282A847900F569D1 /* EmotionDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF991282A847900F569D1 /* EmotionDiaryApp.swift */; };
-		651BF994282A847900F569D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF993282A847900F569D1 /* ContentView.swift */; };
 		651BF996282A847900F569D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651BF995282A847900F569D1 /* Assets.xcassets */; };
 		651BF999282A847900F569D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651BF998282A847900F569D1 /* Preview Assets.xcassets */; };
+		651BF9A1282A978B00F569D1 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF9A0282A978B00F569D1 /* BounceButton.swift */; };
+		651BF9A3282A9F7400F569D1 /* EmotionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF9A2282A9F7400F569D1 /* EmotionRowView.swift */; };
+		651BF9A5282AA21C00F569D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BF9A4282AA21C00F569D1 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		651BF98E282A847900F569D1 /* EmotionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BF991282A847900F569D1 /* EmotionDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDiaryApp.swift; sourceTree = "<group>"; };
-		651BF993282A847900F569D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		651BF995282A847900F569D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651BF998282A847900F569D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		651BF9A0282A978B00F569D1 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		651BF9A2282A9F7400F569D1 /* EmotionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionRowView.swift; sourceTree = "<group>"; };
+		651BF9A4282AA21C00F569D1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				651BF991282A847900F569D1 /* EmotionDiaryApp.swift */,
-				651BF993282A847900F569D1 /* ContentView.swift */,
+				651BF99F282A96E200F569D1 /* View */,
 				651BF995282A847900F569D1 /* Assets.xcassets */,
 				651BF997282A847900F569D1 /* Preview Content */,
 			);
@@ -65,6 +69,16 @@
 				651BF998282A847900F569D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		651BF99F282A96E200F569D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				651BF9A0282A978B00F569D1 /* BounceButton.swift */,
+				651BF9A2282A9F7400F569D1 /* EmotionRowView.swift */,
+				651BF9A4282AA21C00F569D1 /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651BF994282A847900F569D1 /* ContentView.swift in Sources */,
+				651BF9A1282A978B00F569D1 /* BounceButton.swift in Sources */,
+				651BF9A5282AA21C00F569D1 /* MainView.swift in Sources */,
+				651BF9A3282A9F7400F569D1 /* EmotionRowView.swift in Sources */,
 				651BF992282A847900F569D1 /* EmotionDiaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
