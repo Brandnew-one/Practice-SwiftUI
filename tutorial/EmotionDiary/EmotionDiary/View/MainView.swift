@@ -41,12 +41,30 @@ struct MainView: View {
   }
 
   var body: some View {
-    VStack {
-      emotionRowView(index: 0)
+    NavigationView {
+      ZStack {
 
-      emotionRowView(index: 3)
+        VStack {
+          emotionRowView(index: 0)
 
-      emotionRowView(index: 6)
+          emotionRowView(index: 3)
+
+          emotionRowView(index: 6)
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("감정일기")
+        .toolbar {
+          ToolbarItem(placement: .navigationBarLeading) {
+            Button(
+              action: { print("Hello") },
+              label: {
+                Label("Refresh", systemImage: "arrow.clockwise")
+                  .labelStyle(.iconOnly)
+              }
+            )
+          }
+        }
+      }
     }
   }
 }
