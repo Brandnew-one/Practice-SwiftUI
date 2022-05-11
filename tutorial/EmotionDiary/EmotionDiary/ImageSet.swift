@@ -18,12 +18,14 @@ enum ImageSet: Int {
   case mono_slime7 = 6
   case mono_slime8 = 7
   case mono_slime9 = 8
+
+  //  var emotionImage: Image {
+  //    Image(self.rawValue)
+  //  }
 }
 
+// MARK: Index만을 이용해서 초기화 할 수 있도록 설정
 extension ImageSet {
-//  var emotionImage: Image {
-//    Image(self.rawValue)
-//  }
   var emotionImage: Image {
     switch self {
     case .mono_slime1:

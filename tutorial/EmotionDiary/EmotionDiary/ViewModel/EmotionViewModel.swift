@@ -24,6 +24,9 @@ class EmotionViewModel: ObservableObject {
   @Published
   var emtionNumbers = [Int](repeating: 0, count: 9)
 
+  @Published
+  var isHidden: Bool = true
+
   init() {
     loadEmotionNumbers()
   }
@@ -43,6 +46,13 @@ class EmotionViewModel: ObservableObject {
     let currentVal = UserDefaults.standard.integer(forKey: userDefaultsKey[index])
     UserDefaults.standard.set(currentVal + 1, forKey: userDefaultsKey[index])
     emtionNumbers[index] = currentVal + 1
+  }
+
+  func resetEmotionNumbers() {
+    for i in 0...8 {
+      UserDefaults.standard.set(0, forKey: userDefaultsKey[i])
+    }
+    loadEmotionNumbers()
   }
 
 }

@@ -43,7 +43,6 @@ struct MainView: View {
   var body: some View {
     NavigationView {
       ZStack {
-
         VStack {
           emotionRowView(index: 0)
 
@@ -56,7 +55,7 @@ struct MainView: View {
         .toolbar {
           ToolbarItem(placement: .navigationBarLeading) {
             Button(
-              action: { print("Hello") },
+              action: { viewModel.isHidden = false },
               label: {
                 Label("Refresh", systemImage: "arrow.clockwise")
                   .labelStyle(.iconOnly)
@@ -64,6 +63,8 @@ struct MainView: View {
             )
           }
         }
+
+        PopupView(viewModel: viewModel)
       }
     }
   }
