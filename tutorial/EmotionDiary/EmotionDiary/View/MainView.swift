@@ -8,8 +8,46 @@
 import SwiftUI
 
 struct MainView: View {
+  @StateObject
+  var viewModel = EmotionViewModel()
+
+  @ViewBuilder
+  func emotionRowView(
+    index: Int
+  ) -> some View {
+    HStack {
+      Spacer()
+
+      EmotionView(
+        emotionViewModel: viewModel,
+        emtionImage: ImageSet(rawValue: index)!,
+        emotionIndex: index
+      )
+
+      EmotionView(
+        emotionViewModel: viewModel,
+        emtionImage: ImageSet(rawValue: index + 1)!,
+        emotionIndex: index + 1
+      )
+
+      EmotionView(
+        emotionViewModel: viewModel,
+        emtionImage: ImageSet(rawValue: index + 2)!,
+        emotionIndex: index + 2
+      )
+
+      Spacer()
+    }
+  }
+
   var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    VStack {
+      emotionRowView(index: 0)
+
+      emotionRowView(index: 3)
+
+      emotionRowView(index: 6)
+    }
   }
 }
 

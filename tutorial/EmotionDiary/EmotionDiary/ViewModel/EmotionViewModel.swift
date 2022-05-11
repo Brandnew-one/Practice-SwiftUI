@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class EmtionViewModel: ObservableObject {
+class EmotionViewModel: ObservableObject {
   let emotionString: [String] = [
     "행복해", "퇴근해", "좋아해",
     "당황해", "속상해", "우울해",
@@ -23,6 +23,10 @@ class EmtionViewModel: ObservableObject {
 
   @Published
   var emtionNumbers = [Int](repeating: 0, count: 9)
+
+  init() {
+    loadEmotionNumbers()
+  }
 
 // https://developer.apple.com/documentation/foundation/userdefaults#//apple_ref/occ/instm/NSUserDefaults/integerForKey
   func loadEmotionNumbers() {
