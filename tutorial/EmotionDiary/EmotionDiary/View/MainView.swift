@@ -12,7 +12,7 @@ struct MainView: View {
   var viewModel = EmotionViewModel()
 
   @ViewBuilder
-  func emotionRowView(
+  private func emotionRowView(
     index: Int
   ) -> some View {
     HStack {

@@ -16,7 +16,7 @@ struct PopupView: View {
   let device = UIScreen.main.bounds
 
   @ViewBuilder
-  func roundButton(
+  private func roundButton(
     text: String,
     color: Color,
     action: @escaping () -> Void
@@ -36,7 +36,7 @@ struct PopupView: View {
   }
 
   @ViewBuilder
-  func buttonRow() -> some View {
+  private func buttonRow() -> some View {
     HStack(alignment: .center, spacing: 10) {
       Spacer()
 
