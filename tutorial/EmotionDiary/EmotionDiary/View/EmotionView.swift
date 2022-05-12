@@ -26,7 +26,7 @@ struct EmotionView: View {
       HStack(alignment: .center, spacing: 1) {
         Text(emotionViewModel.emotionString[emotionIndex])
 
-        Text("\(emotionViewModel.emtionNumbers[emotionIndex])")
+        Text("\(emotionViewModel.emotionNumbers[emotionIndex])")
       }
     }
   }

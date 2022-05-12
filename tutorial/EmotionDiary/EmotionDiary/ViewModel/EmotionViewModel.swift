@@ -22,7 +22,7 @@ class EmotionViewModel: ObservableObject {
   ]
 
   @Published
-  var emtionNumbers = [Int](repeating: 0, count: 9)
+  var emotionNumbers = [Int](repeating: 0, count: 9)
 
   @Published
   var isHidden: Bool = true
@@ -36,8 +36,9 @@ class EmotionViewModel: ObservableObject {
     for i in 0...8 {
       if UserDefaults.standard.integer(forKey: userDefaultsKey[i]) == 0 {
         UserDefaults.standard.set(0, forKey: userDefaultsKey[i])
+        emotionNumbers[i] = 0
       } else {
-        emtionNumbers[i] = UserDefaults.standard.integer(forKey: userDefaultsKey[i])
+        emotionNumbers[i] = UserDefaults.standard.integer(forKey: userDefaultsKey[i])
       }
     }
   }
@@ -45,7 +46,7 @@ class EmotionViewModel: ObservableObject {
   func updateEmotionNumber(index: Int) {
     let currentVal = UserDefaults.standard.integer(forKey: userDefaultsKey[index])
     UserDefaults.standard.set(currentVal + 1, forKey: userDefaultsKey[index])
-    emtionNumbers[index] = currentVal + 1
+    emotionNumbers[index] = currentVal + 1
   }
 
   func resetEmotionNumbers() {
