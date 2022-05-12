@@ -7,37 +7,58 @@
 
 import SwiftUI
 
+// https://exyte.com/blog/swiftui-tutorial-popupview-library
+// TODO: 팝업 라이브러리 코드 분석해서 적용시키기
 struct PopupView: View {
   @ObservedObject
   var viewModel: EmotionViewModel
 
+  let device = UIScreen.main.bounds
+
+  @ViewBuilder
+  func roundButton(
+    text: String,
+    color: Color,
+    action: @escaping () -> Void
+  ) -> some View {
+    Button(
+      action: action,
+      label: {
+        Text(text)
+          .foregroundColor(color)
+          .padding()
+          .overlay(
+            RoundedRectangle(cornerRadius: 20)
+              .stroke(color, lineWidth: 2)
+          )
+      }
+    )
+  }
+
   @ViewBuilder
   func buttonRow() -> some View {
     HStack(alignment: .center, spacing: 10) {
-      Button(
-        action: { viewModel.isHidden = true },
-        label: {
-          Text("취소")
-            .foregroundColor(.red)
-        }
-      )
+      Spacer()
 
-      Divider()
-    // FIXME: Reset이후 뷰가 업데이트 되지 않는 문제
-      Button(
-        action: {
+      roundButton(
+        text: "취소",
+        color: .red) {
+          viewModel.isHidden = true
+        }
+
+      Spacer()
+
+      roundButton(
+        text: "확인",
+        color: .blue) {
           viewModel.resetEmotionNumbers()
           viewModel.isHidden = true
-        },
-        label: {
-          Text("확인")
-            .foregroundColor(.blue)
         }
-      )
+
+      Spacer()
     }
   }
 
-  // FIXME: 팝업뷰 뷰 디자인 변경필요
   var body: some View {
     if viewModel.isHidden {
       EmptyView()
@@ -46,25 +67,25 @@ struct PopupView: View {
         Color.black.opacity(0.3)
           .ignoresSafeArea()
 
-        VStack(spacing: 2) {
-          Text("초기화 하시겠습니까?")
+        VStack(spacing: 0) {
+          Text("확인 버튼을 눌러서 감정일기를 초기화 할 수 있어요!")
             .font(.body)
-
-          Divider()
-            .frame(height: 1)
-            .background(Color.blue)
-
-          Text("확인 버튼을 누르면 초기화됩니다.")
-            .font(.body)
-
-          Divider()
-            .frame(height: 1)
-            .background(Color.blue)
+            .layoutPriority(1)
+            .multilineTextAlignment(.center)
+            .padding()
 
           buttonRow()
         }
-        .background(Color.white)
-        .frame(width: 250, height: 100)
+        .padding()
+        .overlay(
+          RoundedRectangle(cornerRadius: 20)
+            .stroke(Color.black, lineWidth: 2)
+        )
+        .background(
+          RoundedRectangle(cornerRadius: 20)
+            .fill(.white)
+        )
+        .frame(width: device.width * 0.7)
       }
     }
   }
