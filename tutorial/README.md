@@ -33,8 +33,10 @@ iOS 14 부터느 커스텀한 탭제스쳐를 만들어서 사용해야 한다. 
 
 ***
 
-## PopupView
+## EmotionDiary
+
 
 | Main |
 | :-: |
-| ![Simulator Screen Recording - iPhone 13 - 2022-05-08 at 23 00 46](https://user-images.githubusercontent.com/88618825/167299937-8afd43af-483a-49b5-962c-68c4d623576d.gif) |
+| ![Simulator Screen Recording - iPhone 13 - 2022-05-14 at 23 34 58](https://user-images.githubusercontent.com/88618825/168430254-61067f36-675d-4004-b55e-ed99b2411f37.gif) |
+
