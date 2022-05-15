@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// TODO: LazyVGrid 적용 시켜보기
 struct MainView: View {
   @StateObject
   var viewModel = EmotionViewModel()
@@ -16,8 +17,6 @@ struct MainView: View {
     index: Int
   ) -> some View {
     HStack {
-      Spacer()
-
       EmotionView(
         emotionViewModel: viewModel,
         emtionImage: ImageSet(rawValue: index)!,
@@ -35,8 +34,6 @@ struct MainView: View {
         emtionImage: ImageSet(rawValue: index + 2)!,
         emotionIndex: index + 2
       )
-
-      Spacer()
     }
   }
 
@@ -55,7 +52,9 @@ struct MainView: View {
         .toolbar {
           ToolbarItem(placement: .navigationBarLeading) {
             Button(
-              action: { viewModel.isHidden = false },
+              action: {
+                viewModel.showPopupView()
+              },
               label: {
                 Label("Refresh", systemImage: "arrow.clockwise")
                   .labelStyle(.iconOnly)

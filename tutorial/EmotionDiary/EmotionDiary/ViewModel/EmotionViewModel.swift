@@ -56,4 +56,12 @@ class EmotionViewModel: ObservableObject {
     loadEmotionNumbers()
   }
 
+  func showPopupView() {
+    self.isHidden = false
+  }
+
+  func dismissPopupView() {
+    self.isHidden = true
+  }
+
 }

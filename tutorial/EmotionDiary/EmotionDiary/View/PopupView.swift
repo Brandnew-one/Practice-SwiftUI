@@ -43,7 +43,7 @@ struct PopupView: View {
       roundButton(
         text: "취소",
         color: .red) {
-          viewModel.isHidden = true
+          viewModel.dismissPopupView()
         }
 
       Spacer()
@@ -52,7 +52,7 @@ struct PopupView: View {
         text: "확인",
         color: .blue) {
           viewModel.resetEmotionNumbers()
-          viewModel.isHidden = true
+          viewModel.dismissPopupView()
         }
 
       Spacer()

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// TODO: AppStorage 이용해서 적용시켜보기
 enum ImageSet: Int {
   case mono_slime1 = 0
   case mono_slime2 = 1
