@@ -13,6 +13,7 @@
 		65F301BF2838A0500095C0D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F301BE2838A0500095C0D2 /* Preview Assets.xcassets */; };
 		65F301C62838A1360095C0D2 /* NewlyCoinedWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = 65F301C52838A1360095C0D2 /* NewlyCoinedWords.csv */; };
 		65F301CA2838A1D10095C0D2 /* NewlyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F301C92838A1D10095C0D2 /* NewlyWord.swift */; };
+		65F301CE2838ABCE0095C0D2 /* NewlyWordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F301CD2838ABCE0095C0D2 /* NewlyWordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		65F301BE2838A0500095C0D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65F301C52838A1360095C0D2 /* NewlyCoinedWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewlyCoinedWords.csv; sourceTree = "<group>"; };
 		65F301C92838A1D10095C0D2 /* NewlyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyWord.swift; sourceTree = "<group>"; };
+		65F301CD2838ABCE0095C0D2 /* NewlyWordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyWordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				65F301B72838A04F0095C0D2 /* NewlyWordApp.swift */,
-				65F301C82838A1500095C0D2 /* Data */,
+				65F301CD2838ABCE0095C0D2 /* NewlyWordManager.swift */,
 				65F301C72838A1450095C0D2 /* Model */,
 				65F301B92838A04F0095C0D2 /* ContentView.swift */,
 				65F301BB2838A0500095C0D2 /* Assets.xcassets */,
@@ -76,17 +78,10 @@
 		65F301C72838A1450095C0D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65F301C52838A1360095C0D2 /* NewlyCoinedWords.csv */,
 				65F301C92838A1D10095C0D2 /* NewlyWord.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		65F301C82838A1500095C0D2 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				65F301C52838A1360095C0D2 /* NewlyCoinedWords.csv */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +158,7 @@
 				65F301BA2838A04F0095C0D2 /* ContentView.swift in Sources */,
 				65F301B82838A04F0095C0D2 /* NewlyWordApp.swift in Sources */,
 				65F301CA2838A1D10095C0D2 /* NewlyWord.swift in Sources */,
+				65F301CE2838ABCE0095C0D2 /* NewlyWordManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
