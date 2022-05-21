@@ -7,139 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6542A67C283015D200319C5C /* TrendMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6542A67B283015D200319C5C /* TrendMediaView.swift */; };
-		659A87D628300B4100A5F265 /* TrendMediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A87D528300B4100A5F265 /* TrendMediaApp.swift */; };
-		659A87D828300B4100A5F265 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A87D728300B4100A5F265 /* ContentView.swift */; };
-		659A87DA28300B4100A5F265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659A87D928300B4100A5F265 /* Assets.xcassets */; };
-		659A87DD28300B4100A5F265 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659A87DC28300B4100A5F265 /* Preview Assets.xcassets */; };
-		F178EDCFA62874455D12BD30 /* Pods_TrendMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF2A5B91832BB076297BCF /* Pods_TrendMedia.framework */; };
+		65F301B82838A04F0095C0D2 /* NewlyWordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F301B72838A04F0095C0D2 /* NewlyWordApp.swift */; };
+		65F301BA2838A04F0095C0D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F301B92838A04F0095C0D2 /* ContentView.swift */; };
+		65F301BC2838A0500095C0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F301BB2838A0500095C0D2 /* Assets.xcassets */; };
+		65F301BF2838A0500095C0D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F301BE2838A0500095C0D2 /* Preview Assets.xcassets */; };
+		65F301C62838A1360095C0D2 /* NewlyCoinedWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = 65F301C52838A1360095C0D2 /* NewlyCoinedWords.csv */; };
+		65F301CA2838A1D10095C0D2 /* NewlyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F301C92838A1D10095C0D2 /* NewlyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6542A67B283015D200319C5C /* TrendMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMediaView.swift; sourceTree = "<group>"; };
-		659A87D228300B4100A5F265 /* TrendMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		659A87D528300B4100A5F265 /* TrendMediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendMediaApp.swift; sourceTree = "<group>"; };
-		659A87D728300B4100A5F265 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		659A87D928300B4100A5F265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		659A87DC28300B4100A5F265 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		84572083EF1CCC3899A803C7 /* Pods-TrendMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendMedia.release.xcconfig"; path = "Target Support Files/Pods-TrendMedia/Pods-TrendMedia.release.xcconfig"; sourceTree = "<group>"; };
-		B1DE2C1B2A69C9D3739145F5 /* Pods-TrendMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendMedia.debug.xcconfig"; path = "Target Support Files/Pods-TrendMedia/Pods-TrendMedia.debug.xcconfig"; sourceTree = "<group>"; };
-		F3FF2A5B91832BB076297BCF /* Pods_TrendMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F301B42838A04F0095C0D2 /* NewlyWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewlyWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F301B72838A04F0095C0D2 /* NewlyWordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyWordApp.swift; sourceTree = "<group>"; };
+		65F301B92838A04F0095C0D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		65F301BB2838A0500095C0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65F301BE2838A0500095C0D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65F301C52838A1360095C0D2 /* NewlyCoinedWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewlyCoinedWords.csv; sourceTree = "<group>"; };
+		65F301C92838A1D10095C0D2 /* NewlyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewlyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		659A87CF28300B4100A5F265 /* Frameworks */ = {
+		65F301B12838A04F0095C0D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F178EDCFA62874455D12BD30 /* Pods_TrendMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6542A67A283015B100319C5C /* View */ = {
+		65F301AB2838A04F0095C0D2 = {
 			isa = PBXGroup;
 			children = (
-				659A87D728300B4100A5F265 /* ContentView.swift */,
-				6542A67B283015D200319C5C /* TrendMediaView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		659A87C928300B4100A5F265 = {
-			isa = PBXGroup;
-			children = (
-				659A87D428300B4100A5F265 /* TrendMedia */,
-				659A87D328300B4100A5F265 /* Products */,
-				8402101AA562AB6AAF27D323 /* Pods */,
-				F60CA6373BD20BD3686BF592 /* Frameworks */,
+				65F301B62838A04F0095C0D2 /* NewlyWord */,
+				65F301B52838A04F0095C0D2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		659A87D328300B4100A5F265 /* Products */ = {
+		65F301B52838A04F0095C0D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				659A87D228300B4100A5F265 /* TrendMedia.app */,
+				65F301B42838A04F0095C0D2 /* NewlyWord.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		659A87D428300B4100A5F265 /* TrendMedia */ = {
+		65F301B62838A04F0095C0D2 /* NewlyWord */ = {
 			isa = PBXGroup;
 			children = (
-				659A87D528300B4100A5F265 /* TrendMediaApp.swift */,
-				6542A67A283015B100319C5C /* View */,
-				659A87D928300B4100A5F265 /* Assets.xcassets */,
-				659A87DB28300B4100A5F265 /* Preview Content */,
+				65F301B72838A04F0095C0D2 /* NewlyWordApp.swift */,
+				65F301C82838A1500095C0D2 /* Data */,
+				65F301C72838A1450095C0D2 /* Model */,
+				65F301B92838A04F0095C0D2 /* ContentView.swift */,
+				65F301BB2838A0500095C0D2 /* Assets.xcassets */,
+				65F301BD2838A0500095C0D2 /* Preview Content */,
 			);
-			path = TrendMedia;
+			path = NewlyWord;
 			sourceTree = "<group>";
 		};
-		659A87DB28300B4100A5F265 /* Preview Content */ = {
+		65F301BD2838A0500095C0D2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				659A87DC28300B4100A5F265 /* Preview Assets.xcassets */,
+				65F301BE2838A0500095C0D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8402101AA562AB6AAF27D323 /* Pods */ = {
+		65F301C72838A1450095C0D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B1DE2C1B2A69C9D3739145F5 /* Pods-TrendMedia.debug.xcconfig */,
-				84572083EF1CCC3899A803C7 /* Pods-TrendMedia.release.xcconfig */,
+				65F301C92838A1D10095C0D2 /* NewlyWord.swift */,
 			);
-			path = Pods;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		F60CA6373BD20BD3686BF592 /* Frameworks */ = {
+		65F301C82838A1500095C0D2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				F3FF2A5B91832BB076297BCF /* Pods_TrendMedia.framework */,
+				65F301C52838A1360095C0D2 /* NewlyCoinedWords.csv */,
 			);
-			name = Frameworks;
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		659A87D128300B4100A5F265 /* TrendMedia */ = {
+		65F301B32838A04F0095C0D2 /* NewlyWord */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 659A87E028300B4100A5F265 /* Build configuration list for PBXNativeTarget "TrendMedia" */;
+			buildConfigurationList = 65F301C22838A0500095C0D2 /* Build configuration list for PBXNativeTarget "NewlyWord" */;
 			buildPhases = (
-				743ABD4062AE39C1697AC74A /* [CP] Check Pods Manifest.lock */,
-				659A87CE28300B4100A5F265 /* Sources */,
-				659A87CF28300B4100A5F265 /* Frameworks */,
-				659A87D028300B4100A5F265 /* Resources */,
-				73B94A0230FD36EC7807626A /* [CP] Embed Pods Frameworks */,
+				65F301B02838A04F0095C0D2 /* Sources */,
+				65F301B12838A04F0095C0D2 /* Frameworks */,
+				65F301B22838A04F0095C0D2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TrendMedia;
-			productName = TrendMedia;
-			productReference = 659A87D228300B4100A5F265 /* TrendMedia.app */;
+			name = NewlyWord;
+			productName = NewlyWord;
+			productReference = 65F301B42838A04F0095C0D2 /* NewlyWord.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		659A87CA28300B4100A5F265 /* Project object */ = {
+		65F301AC2838A04F0095C0D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					659A87D128300B4100A5F265 = {
+					65F301B32838A04F0095C0D2 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 659A87CD28300B4100A5F265 /* Build configuration list for PBXProject "TrendMedia" */;
+			buildConfigurationList = 65F301AF2838A04F0095C0D2 /* Build configuration list for PBXProject "NewlyWord" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,85 +132,44 @@
 				en,
 				Base,
 			);
-			mainGroup = 659A87C928300B4100A5F265;
-			productRefGroup = 659A87D328300B4100A5F265 /* Products */;
+			mainGroup = 65F301AB2838A04F0095C0D2;
+			productRefGroup = 65F301B52838A04F0095C0D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				659A87D128300B4100A5F265 /* TrendMedia */,
+				65F301B32838A04F0095C0D2 /* NewlyWord */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		659A87D028300B4100A5F265 /* Resources */ = {
+		65F301B22838A04F0095C0D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659A87DD28300B4100A5F265 /* Preview Assets.xcassets in Resources */,
-				659A87DA28300B4100A5F265 /* Assets.xcassets in Resources */,
+				65F301C62838A1360095C0D2 /* NewlyCoinedWords.csv in Resources */,
+				65F301BF2838A0500095C0D2 /* Preview Assets.xcassets in Resources */,
+				65F301BC2838A0500095C0D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		73B94A0230FD36EC7807626A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TrendMedia/Pods-TrendMedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TrendMedia/Pods-TrendMedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendMedia/Pods-TrendMedia-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		743ABD4062AE39C1697AC74A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TrendMedia-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		659A87CE28300B4100A5F265 /* Sources */ = {
+		65F301B02838A04F0095C0D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659A87D828300B4100A5F265 /* ContentView.swift in Sources */,
-				6542A67C283015D200319C5C /* TrendMediaView.swift in Sources */,
-				659A87D628300B4100A5F265 /* TrendMediaApp.swift in Sources */,
+				65F301BA2838A04F0095C0D2 /* ContentView.swift in Sources */,
+				65F301B82838A04F0095C0D2 /* NewlyWordApp.swift in Sources */,
+				65F301CA2838A1D10095C0D2 /* NewlyWord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		659A87DE28300B4100A5F265 /* Debug */ = {
+		65F301C02838A0500095C0D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		659A87DF28300B4100A5F265 /* Release */ = {
+		65F301C12838A0500095C0D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,15 +283,14 @@
 			};
 			name = Release;
 		};
-		659A87E128300B4100A5F265 /* Debug */ = {
+		65F301C32838A0500095C0D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1DE2C1B2A69C9D3739145F5 /* Pods-TrendMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TrendMedia/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NewlyWord/Preview Content\"";
 				DEVELOPMENT_TEAM = W4HDX5XCG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -356,13 +299,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangwon.TrendMedia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwon.NewlyWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -370,15 +312,14 @@
 			};
 			name = Debug;
 		};
-		659A87E228300B4100A5F265 /* Release */ = {
+		65F301C42838A0500095C0D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84572083EF1CCC3899A803C7 /* Pods-TrendMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TrendMedia/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NewlyWord/Preview Content\"";
 				DEVELOPMENT_TEAM = W4HDX5XCG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -387,13 +328,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangwon.TrendMedia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sangwon.NewlyWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -404,25 +344,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		659A87CD28300B4100A5F265 /* Build configuration list for PBXProject "TrendMedia" */ = {
+		65F301AF2838A04F0095C0D2 /* Build configuration list for PBXProject "NewlyWord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				659A87DE28300B4100A5F265 /* Debug */,
-				659A87DF28300B4100A5F265 /* Release */,
+				65F301C02838A0500095C0D2 /* Debug */,
+				65F301C12838A0500095C0D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		659A87E028300B4100A5F265 /* Build configuration list for PBXNativeTarget "TrendMedia" */ = {
+		65F301C22838A0500095C0D2 /* Build configuration list for PBXNativeTarget "NewlyWord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				659A87E128300B4100A5F265 /* Debug */,
-				659A87E228300B4100A5F265 /* Release */,
+				65F301C32838A0500095C0D2 /* Debug */,
+				65F301C42838A0500095C0D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 659A87CA28300B4100A5F265 /* Project object */;
+	rootObject = 65F301AC2838A04F0095C0D2 /* Project object */;
 }
