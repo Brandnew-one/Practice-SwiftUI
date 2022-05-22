@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-// TODO: - VM이 Observable 할 필요 없을것 같음
 public class NewlyWordViewModel {
   let nwManager: NewlyWordManager
 
@@ -16,12 +15,33 @@ public class NewlyWordViewModel {
     self.nwManager = NewlyWordManager(csv: fileName)
   }
 
-  // TODO: - 유효하지 않은 key값에 대응 필요
   func getValue(_ key: String) -> String {
-    return ""
+    guard
+      let meaning = nwManager.newlyWordDic[key] else {
+      return "아재요.. 그런말은 없습니다."
+    }
+    return meaning
   }
 
+  // TODO: - 스펙상 4개의 단어가 달라야 함
   func getRandomWord() -> String {
-    return ""
+//    var randomWord = nwManager.newlyWordDic.randomElement()?.value
+//    for word in words {
+//      if randomWord == word {
+//        randomWord = nwManager.newlyWordDic.randomElement()?.value
+//      }
+//    }
+//    guard
+//      let randomWord = randomWord
+//    else {
+//      return ""
+//    }
+//    return randomWord
+    guard
+      let randomWord = nwManager.newlyWordDic.randomElement()?.key
+    else {
+      return ""
+    }
+    return randomWord
   }
 }

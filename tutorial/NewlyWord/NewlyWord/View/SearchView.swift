@@ -10,22 +10,25 @@ import SwiftUI
 // TODO: - 가로, 세로모드를 동시에 지원할 수 있는 뷰를 구성
 // TODO: - 텍스트필드안에 버튼이미지 좀 예쁘게 넣기
 struct SearchView: View {
+  @State
+  var findWord: String = ""
+
   @Binding
-  var findWord: String
+  var wordMeaning: String
+
+  let viewModel: NewlyWordViewModel
 
   var body: some View {
     ZStack(alignment: .trailing) {
-
       TextField("", text: $findWord)
         .textFieldStyle(.roundedBorder)
         .multilineTextAlignment(.leading)
         .padding([.leading, .trailing])
 
-
       if findWord.isEmpty == false {
         Button(
           action: {
-            findWord = "" // TODO: - ViewModel 통신
+            wordMeaning = viewModel.getValue(findWord)
           },
           label: {
             Image(systemName: "magnifyingglass.circle.fill")
@@ -40,6 +43,9 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
   static var previews: some View {
-    SearchView(findWord: .constant(""))
+    SearchView(
+      wordMeaning: .constant(""),
+      viewModel: NewlyWordViewModel(csv: "NewlyCoinedWord")
+    )
   }
 }

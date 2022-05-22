@@ -31,10 +31,16 @@ struct NewlyWordView: View {
 
   var body: some View {
     VStack(spacing: 8) {
-      SearchView(findWord: $findWord)
+      SearchView(
+        wordMeaning: $wordMeaning,
+        viewModel: viewModel
+      )
         .padding(.top)
 
-      RandomWordView(viewModel: viewModel)
+      RandomWordView(
+        wordMeaning: $wordMeaning,
+        viewModel: viewModel
+      )
 
       Spacer()
 

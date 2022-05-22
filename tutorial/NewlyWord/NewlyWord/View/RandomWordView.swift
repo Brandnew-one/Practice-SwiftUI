@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct RandomWordView: View {
+
+  @Binding
+  var wordMeaning: String
+
   let viewModel: NewlyWordViewModel
 
   @ViewBuilder
-  func wordView() -> some View {
+  func wordView(_ word: String) -> some View {
     Button(
       action: {
-        print("") // VM 통신 -> 외부로 값
+        wordMeaning = viewModel.getValue(word)
       },
       label: {
-        Text("ㅠㅠ") // VM 통신
+        Text(word)
           .padding([.top, .leading, .trailing, .bottom], 8)
           .foregroundColor(.black)
           .overlay(
@@ -30,10 +34,10 @@ struct RandomWordView: View {
 
   var body: some View {
     HStack(alignment: .center, spacing: 8) {
-      wordView()
-      wordView()
-      wordView()
-      wordView()
+      wordView(viewModel.getRandomWord())
+      wordView(viewModel.getRandomWord())
+      wordView(viewModel.getRandomWord())
+      wordView(viewModel.getRandomWord())
 
       Spacer()
     }
@@ -43,6 +47,9 @@ struct RandomWordView: View {
 
 struct RandomWordView_Previews: PreviewProvider {
   static var previews: some View {
-    RandomWordView(viewModel: NewlyWordViewModel(csv: "NewlyCoinedWords"))
+    RandomWordView(
+      wordMeaning: .constant(""),
+      viewModel: NewlyWordViewModel(csv: "NewlyCoinedWords")
+    )
   }
 }
