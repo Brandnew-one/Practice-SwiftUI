@@ -17,12 +17,14 @@ class LotteryViewModel: ObservableObject {
   @Published
   var lotteryInfo: Lottery = Lottery()
 
-  let apiService = APIService()
+//  let apiService = APIService.shared
 
   func fetchLotteryInfo(pickedNo: String) {
     self.drwNo = pickedNo
-    apiService.requestLottery(drwNo: drwNo) { lottery in
-      self.lotteryInfo = lottery
+    APIService.shared.requestLotteryWithResultType(drwNo: drwNo) { result in
+      if case let .success(val) = result {
+        self.lotteryInfo = val
+      }
     }
   }
 }
