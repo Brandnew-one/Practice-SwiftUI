@@ -11,7 +11,11 @@ import SwiftUI
 struct ShoppingListApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      ShoppingListCell(shoppingListItem: ShoppingListItem(
+        checkBox: false,
+        star: false,
+        name: "TEST VALIDATION"
+      ))
     }
   }
 }
