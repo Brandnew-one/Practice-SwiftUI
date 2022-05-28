@@ -13,20 +13,21 @@ struct NewlyWordView: View {
   var findWord: String = ""
 
   @State
-  var wordMeaning: String = "테스트"
+  var wordMeaning: String = ""
 
   let viewModel = NewlyWordViewModel(csv: "NewlyCoinedWords")
 
   @ViewBuilder
   func boardView(_ wordMeaning: String) -> some View {
-    ZStack(alignment: .center) {
-      Image("background") // TODO: - 가로모드 대응필요
-        .resizable()
-        .scaledToFit()
-
-      Text(wordMeaning)
-        .font(.title2)
-    }
+    Image("background") // TODO: - 가로모드 대응필요
+      .resizable()
+      .frame(maxWidth: .infinity)
+      .aspectRatio(nil, contentMode: .fit)
+      .overlay(
+        Text(wordMeaning)
+          .font(.title2)
+          .padding()
+      )
   }
 
   var body: some View {

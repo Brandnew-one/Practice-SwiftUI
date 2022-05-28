@@ -33,7 +33,7 @@ public class NewlyWordManager {
     var rows = data.components(separatedBy: "\r\n")
     for row in rows {
       let csvColumns = row.components(separatedBy: ",")
-      if csvColumns.count == 2 { // TODO: - 너무 임시방편 수정하기
+      if csvColumns.count == 2 { // TODO: - 너무 임시방편 수정하기 - slack 적용
         newlyWordDic.updateValue(csvColumns[1], forKey: csvColumns[0])
       }
     }

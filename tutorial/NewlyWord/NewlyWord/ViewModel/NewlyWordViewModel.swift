@@ -25,18 +25,6 @@ public class NewlyWordViewModel {
 
   // TODO: - 스펙상 4개의 단어가 달라야 함
   func getRandomWord() -> String {
-//    var randomWord = nwManager.newlyWordDic.randomElement()?.value
-//    for word in words {
-//      if randomWord == word {
-//        randomWord = nwManager.newlyWordDic.randomElement()?.value
-//      }
-//    }
-//    guard
-//      let randomWord = randomWord
-//    else {
-//      return ""
-//    }
-//    return randomWord
     guard
       let randomWord = nwManager.newlyWordDic.randomElement()?.key
     else {
