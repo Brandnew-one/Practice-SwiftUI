@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650B585728438FC900EB1332 /* Keyboard + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B585628438FC900EB1332 /* Keyboard + Extension.swift */; };
 		6561DDB928427651009DC5D9 /* ShoppingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561DDB828427651009DC5D9 /* ShoppingListApp.swift */; };
 		6561DDBD28427653009DC5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6561DDBC28427653009DC5D9 /* Assets.xcassets */; };
 		6561DDC028427653009DC5D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6561DDBF28427653009DC5D9 /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650B585628438FC900EB1332 /* Keyboard + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard + Extension.swift"; sourceTree = "<group>"; };
 		6561DDB528427651009DC5D9 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6561DDB828427651009DC5D9 /* ShoppingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListApp.swift; sourceTree = "<group>"; };
 		6561DDBC28427653009DC5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				6561DDB828427651009DC5D9 /* ShoppingListApp.swift */,
+				650B585628438FC900EB1332 /* Keyboard + Extension.swift */,
 				6561DDC6284276B0009DC5D9 /* ShoppingList */,
 				6561DDBC28427653009DC5D9 /* Assets.xcassets */,
 				6561DDBE28427653009DC5D9 /* Preview Content */,
@@ -155,6 +158,7 @@
 				6561DDB928427651009DC5D9 /* ShoppingListApp.swift in Sources */,
 				6561DDCC28427EDF009DC5D9 /* ShoppingListViewModel.swift in Sources */,
 				6561DDCE2842967C009DC5D9 /* ShoppingListView.swift in Sources */,
+				650B585728438FC900EB1332 /* Keyboard + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

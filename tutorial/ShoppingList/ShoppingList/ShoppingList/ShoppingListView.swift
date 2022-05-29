@@ -14,81 +14,105 @@ struct ShoppingListView: View {
   @State
   private var text: String = ""
 
+  // TODO: - 다크모드 대응 필요
+  @Environment(\.colorScheme)
+  var colorScheme
+
   private let device = UIScreen.main.bounds
 
+  init(_ viewModel: ShoppingListViewModel) {
+    _viewModel = StateObject(wrappedValue: viewModel)
+    UITableView.appearance().backgroundColor = colorScheme == .light ? .white : .black
+    UITableView.appearance().separatorColor = .clear
+  }
+
   var body: some View {
-    VStack(spacing: 18) {
-      HStack {
-        TextField("구매할 상품을 입력하세요", text: $text)
-
-        Button(
-          action: {
-            viewModel.addList(text)
-            text = ""
-          },
-          label: {
-            Text("추가")
-              .foregroundColor(.black)
-              .padding([.top, .bottom], 8)
-              .padding([.leading, .trailing], 10)
-              .background(Color(UIColor.systemGray3))
-              .cornerRadius(15)
-          }
-        )
-      }
-      .padding()
-      .frame(width: device.width * 0.9)
-      .background(Color(UIColor.systemGray5))
-      .cornerRadius(10)
-
-      ScrollView {
-        ForEach(viewModel.shoppingList) { item in
-          HStack {
-            Button(
-              action: {
-                viewModel.changeList(item, .checkBox)
-              },
-              label: {
-                if item.checkBox {
-                  Image(systemName: "checkmark.square.fill")
-                } else {
-                  Image(systemName: "checkmark.square")
-                }
-              }
+    NavigationView {
+      VStack(spacing: 0) {
+        HStack {
+          TextField("구매할 상품을 입력하세요", text: $text)
+            .onAppear(
+              perform: UIApplication.shared.hideKeyboard
             )
 
-            Text(item.name)
-              .multilineTextAlignment(.leading)
-
-            Spacer()
-
-            Button(
-              action: {
-                viewModel.changeList(item, .star)
-              },
-              label: {
-                if item.star {
-                  Image(systemName: "star.fill")
-                } else {
-                  Image(systemName: "star")
-                }
-              }
-            )
-          }
-          .padding()
-          .frame(width: device.width * 0.9)
-          .background(
-            Color(UIColor.systemGray5)
+          Button(
+            action: {
+              viewModel.addList(text)
+              text = ""
+            },
+            label: {
+              Text("추가")
+                .foregroundColor(.black)
+                .padding([.top, .bottom], 8)
+                .padding([.leading, .trailing], 10)
+                .background(Color(UIColor.systemGray3))
+                .cornerRadius(15)
+            }
           )
-          .cornerRadius(10)
+        }
+        .padding()
+        .frame(width: device.width * 0.9)
+        .background(Color(UIColor.systemGray5))
+        .cornerRadius(10)
+
+        Spacer()
+
+        List {
+          ForEach(viewModel.shoppingList) { item in
+            HStack {
+              Button(
+                action: {
+                  viewModel.changeList(item, .checkBox)
+                },
+                label: {
+                  if item.checkBox {
+                    Image(systemName: "checkmark.square.fill")
+                  } else {
+                    Image(systemName: "checkmark.square")
+                  }
+                }
+              )
+              .buttonStyle(PlainButtonStyle())
+
+              Text(item.name)
+                .multilineTextAlignment(.leading)
+
+              Spacer()
+
+              Button(
+                action: {
+                  viewModel.changeList(item, .star)
+                },
+                label: {
+                  if item.star {
+                    Image(systemName: "star.fill")
+                  } else {
+                    Image(systemName: "star")
+                  }
+                }
+              )
+              .buttonStyle(PlainButtonStyle()) // TODO: - 기능파악하기
+            }
+            .padding()
+//            .frame(width: device.width * 0.9)
+            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
+            .background(
+              Color(UIColor.systemGray5)
+            )
+            .cornerRadius(10)
+          }
+          .onDelete(perform: viewModel.deleteList(at:))
         }
       }
+      .navigationTitle("쇼핑")
+      .navigationBarTitleDisplayMode(.inline)
     }
   }
 }
 
+
 struct ShoppingListView_Previews: PreviewProvider {
   static var previews: some View {
-    ShoppingListView(viewModel: ShoppingListViewModel())
+    ShoppingListView(ShoppingListViewModel())
   }
 }

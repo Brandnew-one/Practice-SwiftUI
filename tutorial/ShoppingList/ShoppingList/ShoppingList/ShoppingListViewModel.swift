@@ -47,7 +47,7 @@ class ShoppingListViewModel: ObservableObject {
     _ mode: ChangeMode
   ) {
     guard
-      let index = shoppingList.firstIndex(where: { $0 == item })
+      let index = shoppingList.firstIndex(where: { $0.id == item.id })
     else {
       print("Modify Value Fail")
       return
@@ -60,6 +60,23 @@ class ShoppingListViewModel: ObservableObject {
       changeitem.star.toggle()
     }
     self.shoppingList[index] = changeitem
+    userDefaults.setValue(try? PropertyListEncoder().encode(shoppingList), forKey: userDefaultsKey)
+  }
+
+  // MARK: - Delete Value
+  func deleteList(at offsets: IndexSet) {
+    shoppingList.remove(atOffsets: offsets)
+    userDefaults.setValue(try? PropertyListEncoder().encode(shoppingList), forKey: userDefaultsKey)
+  }
+
+  func deleteList(_ item: ShoppingListItem) {
+    guard
+      let index = shoppingList.firstIndex(where: { $0.id == item.id })
+    else {
+      print("Cannot Find the ID")
+      return
+    }
+    shoppingList.remove(at: index)
     userDefaults.setValue(try? PropertyListEncoder().encode(shoppingList), forKey: userDefaultsKey)
   }
 
