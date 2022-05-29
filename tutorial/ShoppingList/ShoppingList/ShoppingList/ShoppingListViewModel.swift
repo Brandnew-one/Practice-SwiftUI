@@ -13,31 +13,53 @@ class ShoppingListViewModel: ObservableObject {
   private let userDefaultsKey = "ShoppingList"
   private let userDefaults = UserDefaults.standard
 
+  enum ChangeMode {
+    case checkBox
+    case star
+  }
+
   @Published
-  var shoppingList: [ShoppingListItem]?
+  var shoppingList: [ShoppingListItem] = []
 
   init() {
     loadList()
   }
 
   // MARK: - New Value
+  func addList(_ text: String) {
+    let item = ShoppingListItem(
+      checkBox: false,
+      star: false,
+      name: text
+    )
+    addList(item)
+  }
+
   func addList(_ item: ShoppingListItem) {
-    guard let shoppingList = shoppingList else { return }
     if shoppingList.contains(item) { return }
-    self.shoppingList?.append(item)
+    shoppingList.append(item)
     userDefaults.setValue(try? PropertyListEncoder().encode(shoppingList), forKey: userDefaultsKey)
   }
 
   // MARK: - Modify Value
-  func changeList(_ item: ShoppingListItem) {
+  func changeList(
+    _ item: ShoppingListItem,
+    _ mode: ChangeMode
+  ) {
     guard
-      let shoppingList = shoppingList,
       let index = shoppingList.firstIndex(where: { $0 == item })
     else {
       print("Modify Value Fail")
       return
     }
-    self.shoppingList![index] = item
+    var changeitem = item
+    switch mode {
+    case .checkBox:
+      changeitem.checkBox.toggle()
+    case .star:
+      changeitem.star.toggle()
+    }
+    self.shoppingList[index] = changeitem
     userDefaults.setValue(try? PropertyListEncoder().encode(shoppingList), forKey: userDefaultsKey)
   }
 
